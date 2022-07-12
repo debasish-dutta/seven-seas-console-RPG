@@ -1,0 +1,92 @@
+GOAL:
+    " To become Emperor of the 7 kingdoms " 
+
+CHARACTERS:
+1. Player -> Initial Level = 0
+             Initial Health = 1
+             Initial Armour = 1
+             Initial Attack = 1
+             Level++ ==> Health * 10 ==> Armour * 5
+             Max Level = 5
+             Max Health(Base) = 100,000
+             Max Armour(base) = 3,125
+             Weapon(base) ->  Stick ->Level++ ==> Attack * 2
+                                Max Attack = 64 (32 + x2 bonus)
+)
+2. Monsters ->  a. Goblins -> Initial Level = 0
+                              Initial Health = 2
+                              Initial Attack = 1
+                              Level++ ==> Health * 2 ==> Attack++
+                              Max Level = 5
+                              Max Health = 64
+                              Max Attack = 6
+                              Boss = x2
+                b. Orcs -> Initial Level = 0
+                           Initial Health = 3
+                           Initial Attack = 2
+                           Level++ ==> Health * 2.5 ==> Attack + 1.5
+                           Max Level = 5
+                           Max Health = 293
+                           Max Attack = 10
+                           Boss = x3
+                c. Mummies -> Initial Level = 0
+                              Initial Health = 5
+                              Initial Attack = 4
+                              Level++ ==> Health * 3 ==> Attack + 2
+                              Max Level = 5
+                              Max Health = 1215
+                              Max Attack = 14
+                              Boss = x3
+                d. Succubus -> Initial Level = 0
+                               Initial Health = 6
+                               Initial Attack = 4
+                               Level++ ==> Health * 3.5 ==> Attack + 2.5
+                               Max Level = 5
+                               Max Health = 3152
+                               Max Attack = 17
+                               Boss = x3
+                e. Nymphs -> Initial Level = 0
+                             Initial Health = 6
+                             Initial Attack = 5
+                             Level++ ==> Health * 4 ==> Attack + 3
+                             Max Level = 5
+                             Max Health = 6144
+                             Max Attack = 20
+                             Boss = x3
+                f. Rock Giants -> Initial Level = 0
+                                  Initial Health = 7
+                                  Initial Attack = 8
+                                  Level++ ==> Health * 4.5 ==> Attack * 2
+                                  Max Level = 5
+                                  Max Health = 12,916
+                                  Max Attack = 256
+                                  Boss = x4
+                g. Dragons -> Initial Level = 0
+                              Initial Health = 10
+                              Initial Attack = 10
+                              Level++ ==> Health * 5 ==> Attack * 2.5
+                              Max Level = 5
+                              Max Health = 31,250
+                              Max Attack = 977
+                              Boss = x5
+
+3. Special Characters -> a. Sage -> Give Hints
+                         b. Damsel in Distress -> Can become ally, betray or give coins
+                         c. The old guard -> Leads to treasure
+
+WORLD:
+1. Kingdoms -> 1.   Room->(3x3)
+               2.   Room->(4x4) 
+               3.   Room->(5x5)
+               4.   Room->(6x6)
+               5.   Room->(7x7)
+               6.   Room->(8x8)
+               7.   Room->(10x10)
+
+ITEMS:
+1. Coins -> Can be used to purchase items at the end of each kingdom.
+2. Repair -> Repairs items to full.
+3. Armour -> Adds extra armour (Cloth Jacket, Leather Jacket, Shadow Armour, Dragon Armour)
+4. Weapons -> Adds extra attack (Greatsword, Trident, Greataxe, Bow, Spear)
+5. Random Items -> Adds random characterstics (10-15) => (Pendant, Masks, Rings, Crowns, Hats) 
+
