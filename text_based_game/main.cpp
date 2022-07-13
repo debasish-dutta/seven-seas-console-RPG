@@ -1,5 +1,5 @@
 #include"game.h"
-
+#include <math.h>
 
 using namespace std;
 
@@ -11,12 +11,12 @@ int main()
 	srand(time(NULL));
 
 	Game Game;
-	
+
 	Game.initGame();
 	
 	while(Game.getPlaying())
 	{
-		
+
 		Game.mainMenu();
 	}
 
