@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2E5929287ECC56004B9A94 /* room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E2E5927287ECC56004B9A94 /* room.cpp */; };
 		4E3338BA287C724500A08747 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E3338B9287C724500A08747 /* main.cpp */; };
 		4E3338C8287C740200A08747 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E3338C7287C740200A08747 /* game.cpp */; };
-		4E3338CA287D4B1E00A08747 /* characters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E3338C9287D4B1E00A08747 /* characters.cpp */; };
+		4E3338CA287D4B1E00A08747 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E3338C9287D4B1E00A08747 /* player.cpp */; };
+		4E43C2F4287EACA10001AB5F /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E43C2F2287EACA10001AB5F /* event.cpp */; };
+		4E43C2FA287EBDB70001AB5F /* puzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E43C2F8287EBDB70001AB5F /* puzzle.cpp */; };
+		4E9BE2B4287DD28B00C2F429 /* monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BE2B2287DD28B00C2F429 /* monster.cpp */; };
+		4E9BE2B7287E0E9600C2F429 /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BE2B5287E0E9600C2F429 /* item.cpp */; };
+		4E9BE2BA287E0EEF00C2F429 /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BE2B8287E0EEF00C2F429 /* inventory.cpp */; };
+		4E9BE2BD287E19C600C2F429 /* weapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BE2BB287E19C600C2F429 /* weapon.cpp */; };
+		4E9BE2C0287E19D100C2F429 /* armour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BE2BE287E19D100C2F429 /* armour.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,17 +33,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E2E5927287ECC56004B9A94 /* room.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = room.cpp; sourceTree = "<group>"; };
+		4E2E5928287ECC56004B9A94 /* room.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = room.h; sourceTree = "<group>"; };
+		4E2E592A287ECDD5004B9A94 /* Puzzles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Puzzles; sourceTree = "<group>"; };
+		4E2E592B287EEC63004B9A94 /* dArr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dArr.h; sourceTree = "<group>"; };
+		4E301442287F47060069A898 /* characters.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = characters.txt; sourceTree = "<group>"; };
 		4E3338B6287C724500A08747 /* text_based_game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = text_based_game; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3338B9287C724500A08747 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		4E3338C0287C740200A08747 /* characters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = characters.h; sourceTree = "<group>"; };
+		4E3338C0287C740200A08747 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		4E3338C1287C740200A08747 /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
-		4E3338C2287C740200A08747 /* shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shop.h; sourceTree = "<group>"; };
+		4E3338C2287C740200A08747 /* inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inventory.h; sourceTree = "<group>"; };
 		4E3338C3287C740200A08747 /* intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intro.h; sourceTree = "<group>"; };
-		4E3338C4287C740200A08747 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		4E3338C5287C740200A08747 /* senario.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = senario.txt; sourceTree = "<group>"; };
 		4E3338C6287C740200A08747 /* STLIBINCLUDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLIBINCLUDE.h; sourceTree = "<group>"; };
 		4E3338C7287C740200A08747 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
-		4E3338C9287D4B1E00A08747 /* characters.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = characters.cpp; sourceTree = "<group>"; };
+		4E3338C9287D4B1E00A08747 /* player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		4E43C2F2287EACA10001AB5F /* event.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = event.cpp; sourceTree = "<group>"; };
+		4E43C2F3287EACA10001AB5F /* event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = event.h; sourceTree = "<group>"; };
+		4E43C2F8287EBDB70001AB5F /* puzzle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = puzzle.cpp; sourceTree = "<group>"; };
+		4E43C2F9287EBDB70001AB5F /* puzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puzzle.h; sourceTree = "<group>"; };
+		4E9BE2B2287DD28B00C2F429 /* monster.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = monster.cpp; sourceTree = "<group>"; };
+		4E9BE2B3287DD28B00C2F429 /* monster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = monster.h; sourceTree = "<group>"; };
+		4E9BE2B5287E0E9600C2F429 /* item.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = item.cpp; sourceTree = "<group>"; };
+		4E9BE2B6287E0E9600C2F429 /* item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = item.h; sourceTree = "<group>"; };
+		4E9BE2B8287E0EEF00C2F429 /* inventory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = inventory.cpp; sourceTree = "<group>"; };
+		4E9BE2BB287E19C600C2F429 /* weapon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = weapon.cpp; sourceTree = "<group>"; };
+		4E9BE2BC287E19C600C2F429 /* weapon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weapon.h; sourceTree = "<group>"; };
+		4E9BE2BE287E19D100C2F429 /* armour.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = armour.cpp; sourceTree = "<group>"; };
+		4E9BE2BF287E19D100C2F429 /* armour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = armour.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +77,7 @@
 		4E3338AD287C724500A08747 = {
 			isa = PBXGroup;
 			children = (
-				4E3338B8287C724500A08747 /* text_based_game */,
+				4E3338B8287C724500A08747 /* seven_seas_console_RPG */,
 				4E3338B7287C724500A08747 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,21 +91,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E3338B8287C724500A08747 /* text_based_game */ = {
+		4E3338B8287C724500A08747 /* seven_seas_console_RPG */ = {
 			isa = PBXGroup;
 			children = (
+				4E43C2F8287EBDB70001AB5F /* puzzle.cpp */,
+				4E43C2F9287EBDB70001AB5F /* puzzle.h */,
 				4E3338B9287C724500A08747 /* main.cpp */,
-				4E3338C0287C740200A08747 /* characters.h */,
-				4E3338C9287D4B1E00A08747 /* characters.cpp */,
+				4E3338C0287C740200A08747 /* player.h */,
+				4E2E5927287ECC56004B9A94 /* room.cpp */,
+				4E2E5928287ECC56004B9A94 /* room.h */,
+				4E43C2F2287EACA10001AB5F /* event.cpp */,
+				4E2E592A287ECDD5004B9A94 /* Puzzles */,
+				4E43C2F3287EACA10001AB5F /* event.h */,
+				4E9BE2B5287E0E9600C2F429 /* item.cpp */,
+				4E9BE2BB287E19C600C2F429 /* weapon.cpp */,
+				4E9BE2BE287E19D100C2F429 /* armour.cpp */,
+				4E9BE2BF287E19D100C2F429 /* armour.h */,
+				4E9BE2BC287E19C600C2F429 /* weapon.h */,
+				4E9BE2B8287E0EEF00C2F429 /* inventory.cpp */,
+				4E9BE2B6287E0E9600C2F429 /* item.h */,
+				4E3338C9287D4B1E00A08747 /* player.cpp */,
+				4E9BE2B2287DD28B00C2F429 /* monster.cpp */,
+				4E9BE2B3287DD28B00C2F429 /* monster.h */,
 				4E3338C7287C740200A08747 /* game.cpp */,
 				4E3338C1287C740200A08747 /* game.h */,
 				4E3338C3287C740200A08747 /* intro.h */,
-				4E3338C4287C740200A08747 /* player.h */,
 				4E3338C5287C740200A08747 /* senario.txt */,
-				4E3338C2287C740200A08747 /* shop.h */,
+				4E3338C2287C740200A08747 /* inventory.h */,
 				4E3338C6287C740200A08747 /* STLIBINCLUDE.h */,
+				4E2E592B287EEC63004B9A94 /* dArr.h */,
+				4E301442287F47060069A898 /* characters.txt */,
 			);
-			path = text_based_game;
+			path = seven_seas_console_RPG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4E3338B1287C724500A08747 /* Build configuration list for PBXProject "text_based_game" */;
+			buildConfigurationList = 4E3338B1287C724500A08747 /* Build configuration list for PBXProject "seven_seas_console_rpg" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,9 +182,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E9BE2B4287DD28B00C2F429 /* monster.cpp in Sources */,
+				4E43C2FA287EBDB70001AB5F /* puzzle.cpp in Sources */,
+				4E2E5929287ECC56004B9A94 /* room.cpp in Sources */,
+				4E9BE2C0287E19D100C2F429 /* armour.cpp in Sources */,
 				4E3338BA287C724500A08747 /* main.cpp in Sources */,
 				4E3338C8287C740200A08747 /* game.cpp in Sources */,
-				4E3338CA287D4B1E00A08747 /* characters.cpp in Sources */,
+				4E9BE2BD287E19C600C2F429 /* weapon.cpp in Sources */,
+				4E9BE2B7287E0E9600C2F429 /* item.cpp in Sources */,
+				4E3338CA287D4B1E00A08747 /* player.cpp in Sources */,
+				4E43C2F4287EACA10001AB5F /* event.cpp in Sources */,
+				4E9BE2BA287E0EEF00C2F429 /* inventory.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4E3338B1287C724500A08747 /* Build configuration list for PBXProject "text_based_game" */ = {
+		4E3338B1287C724500A08747 /* Build configuration list for PBXProject "seven_seas_console_rpg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E3338BB287C724500A08747 /* Debug */,

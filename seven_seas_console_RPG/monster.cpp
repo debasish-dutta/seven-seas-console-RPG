@@ -8,6 +8,7 @@ Monster::Monster(int Lvl)
 	this->AtkMin = this->Lvl*1;
 	this->AtkMax = this->Lvl*2;
 	this->Armour = rand() % this->Lvl*5+1;
+	this->Acc = rand() % this->Lvl*2+1;
 	this->dropChance = rand() % 100 + 1;
 }
 

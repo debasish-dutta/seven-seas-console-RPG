@@ -4,12 +4,12 @@ dArr<std::string> Weapon::names;
 
 void Weapon::initNames()
 {
-	Weapon::names.push("Butter-Knife");
-	Weapon::names.push("Leaf-Cutter");
-	Weapon::names.push("Face-Shredder");
-	Weapon::names.push("Bro-Knife");
-	Weapon::names.push("Katana-Sword");
-	Weapon::names.push("Brutal-Murder");
+	Weapon::names.push("Not-Just-a-Stick");
+	Weapon::names.push("Demon-Trident");
+	Weapon::names.push("Phoenix-Greataxe");
+	Weapon::names.push("Chaos-ShortBow");
+	Weapon::names.push("Devil-Spear");
+	Weapon::names.push("Dragon-God's-Greatsword");
 }
 
 Weapon::Weapon() : Item() {
@@ -50,7 +50,7 @@ std::string Weapon::toString()const {
 	   + std::to_string(this->getLevel())
 	   + " | Rarity: "
 	   + std::to_string(this->getRarity())
-	   + "Damage: " + std::to_string(this->damageMin) + " ~ " + std::to_string(this->damageMax);
+	   + " | Damage: " + std::to_string(this->damageMin) + " ~ " + std::to_string(this->damageMax);
 	
 	return str;
 }

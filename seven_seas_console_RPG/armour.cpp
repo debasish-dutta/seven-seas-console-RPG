@@ -4,12 +4,12 @@ dArr<std::string> Armour::names;
 
 void Armour::initNames()
 {
-	Armour::names.push("Bro-Saver");
-	Armour::names.push("Cotton-Rag");
-	Armour::names.push("Devlish-Defender");
-	Armour::names.push("Angels-Balls");
-	Armour::names.push("Iron-Sheets");
-	Armour::names.push("Assassins-Bedsheets");
+	Armour::names.push("Robe-of-Fallen-Angel");
+	Armour::names.push("Dark-Fiend's-Leather-Jacket");
+	Armour::names.push("Leviethan's-Cloak");
+	Armour::names.push("Suit-of-Demon-Blood");
+	Armour::names.push("ColdShadow-Body-Armour");
+	Armour::names.push("Invincible-Dragon-Armour");
 }
 
 Armour::Armour() : Item() {
@@ -46,7 +46,7 @@ std::string Armour::toString()const {
 	   + std::to_string(this->getLevel())
 	   + " | Rarity: "
 	   + std::to_string(this->getRarity())
-	   + "Defence: " + std::to_string(this->defence);
+	   + " | Defence: " + std::to_string(this->defence);
 	
 	return str;
 }

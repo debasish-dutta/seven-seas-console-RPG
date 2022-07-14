@@ -11,12 +11,12 @@ Player::Player() {
 	this->name = "";
 	this->Exp = 0;
 	this->Lvl = 0;
-	this->Hp = 1;
-	this->maxHp = 5;
-	this->Atk = 1;
-	this->expReq = 1;
-	this->Acc = 1;
-	this->Armor = 1;
+	this->Hp = 0;
+	this->maxHp = 0;
+	this->Atk = 0;
+	this->expReq = 0;
+	this->Acc = 0;
+	this->Armor = 0;
 	this->Coins = 0;
 }
 
@@ -30,11 +30,11 @@ Player::Player(std::string name, int distancetravelled, int Exp,
 	this->Exp = Exp;
 	this->Lvl = Lvl;
 	this->Hp = Hp;
-	this->maxHp = 1;
-	this->Atk = 1;
-	this->expReq = 1;
-	this->Acc = 1;
-	this->Armor = 1;
+	this->maxHp = 0;
+	this->Atk = 0;
+	this->expReq = 0;
+	this->Acc = 0;
+	this->Armor = 0;
 	this->Coins = Coins;
 }
 
@@ -52,13 +52,15 @@ void Player::initialize(const std::string name) {
 	this->name = name;
 	this->Exp = 0;
 	this->Lvl = 1;
-	this->Hp = 1;
-	this->maxHp = this->Lvl*10;
-	this->Atk = this->Lvl*2;
+	this->Hp = 5;
+	this->maxHp = pow(10, this->Lvl);
+	this->Atk = pow(2, this->Lvl);
 	this->expReq = static_cast<int>((50/3)*((pow(Lvl,3) - 6*pow(Lvl,2)) + (15*Lvl) - 10));
-	this->Acc = static_cast<int>((this->Lvl)*1.5);
-	this->Armor = this->Lvl*5;
+	this->Acc = static_cast<int>(pow(1.5, this->Lvl));
+	this->Armor = pow(5, this->Lvl);
 	this->Coins = 10;
+	
+	this->updateStats();
 }
 
 void Player::printStats() const {
@@ -78,13 +80,14 @@ void Player::printStats() const {
 std::string Player::getAsString() const
 {
 	return name + " "
-		+ std::to_string(distancetravelled) + " "
-		+ std::to_string(Coins) + " "
-		+ std::to_string(Lvl) + " "
-		+ std::to_string(Exp) + " "
-		+ std::to_string(Atk) + " "
-		+ std::to_string(Armor) + " "
-		+ std::to_string(Hp) + " ";
+	+ std::to_string(distancetravelled) + " "
+	+ std::to_string(Lvl) + " "
+	+ std::to_string(Exp) + " "
+	+ std::to_string(Hp) + " "
+	+ std::to_string(Atk) + " "
+	+ std::to_string(Acc) + " "
+	+ std::to_string(Armor) + " "
+	+ std::to_string(Coins) + " ";
 }
 
 std::string Player::getInvAsString(bool shop)
@@ -129,11 +132,12 @@ std::string Player::getInvAsStringSave()
 }
 
 void Player::levelUp() {
-	if(Exp >= expReq) {
-		Exp -= expReq;
-		Lvl++;
+	if(this->Exp >= this->expReq) {
+		this->Exp -= this->expReq;
+		this->Lvl++;
 		this->expReq = static_cast<int>((50/3)*((pow(Lvl,3) -
 							   6*pow(Lvl,2)) + (15*Lvl) - 10));
+		this->updateStats();
 		std::cout << "YOU ARE NOW LEVEL " << this->Lvl << "!" << "\n\n";
 	}
 	else {

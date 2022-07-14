@@ -23,7 +23,7 @@ void Event::createEvent(Player &player, dArr<Monster>& monsters) {
 			this->puzzleEncounter(player);
 			break;
 		case 2:
-			// RescueEncounter
+			// RescueEncounter: Damsel in Distress
 			std::cout << "Rescue Attempt" << "\n";
 			break;
 		case 3:
@@ -70,7 +70,10 @@ void Event::enemyEncounter(Player &player, dArr<Monster>& monsters) {
 		int combatTotal = 0;
 		int combatRollPlayer = 0;
 		int combatRollEnemy = 0;
-
+		
+		// Battle senario
+	std::cout << "You encountered monsters!!!\n";
+	std::cout << "FIGHT!!!!!" << "\n";
 		while (!escape && !playerDefeated && !enemiesDefeated)
 		{
 			if (playerTurn && !playerDefeated)
@@ -100,7 +103,9 @@ void Event::enemyEncounter(Player &player, dArr<Monster>& monsters) {
 					std::cout << "Faulty input!" << "\n";
 					std::cin.clear();
 					std::cin.ignore(100, '\n');
-
+					
+					std::cout << "Defeat them glourisly or die in battle!!!" << "\n";
+					std::cout << "or take the coward's way out!!" << "\n";
 					std::cout << "= BATTLE MENU =" << "\n\n";
 
 					std::cout << "0: Escape" << "\n";
@@ -160,7 +165,7 @@ void Event::enemyEncounter(Player &player, dArr<Monster>& monsters) {
 
 					//Attack roll
 					combatTotal = monsters[choice].getArmour() + player.getAcc();
-					enemyTotal = monsters[choice].getArmour() / (double)combatTotal * 100;
+					enemyTotal = monsters[choice].getArmour() / (double)combatTotal * 50;
 					playerTotal = player.getAcc() / (double)combatTotal * 100;
 					combatRollPlayer = rand() % playerTotal + 1;
 					combatRollEnemy = rand() % enemyTotal + 1;
@@ -340,10 +345,12 @@ void Event::puzzleEncounter(Player &player) {
 	int gainExp = (chances * player.getLvl() * (rand()%10 + 1));
 	int gainCoins = (chances * player.getLvl() * (rand() % 10 + 1));
 	
-	Puzzle puzzle("/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/text-based-game/text_based_game/text_based_game/Puzzles/2.txt");
-	
+	Puzzle puzzle("/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/seven_seas_console_RPG/seven_seas_console_RPG/Puzzles/2.txt");
+	std::cout << "Oh warrior " << player.getName() << " !!\n";
+	std::cout << "Complete this puzzle if you wish to go forward! And beware....\n";
+	std::cout << "You have only ";
 	while(!completed && chances > 0) {
-		std::cout << "Chances: " << chances << "\n\n";
+		std::cout << chances << " chances left" << "\n\n";
 		chances--;
 		std::cout << puzzle.getString() << "\n";
 		std::cout << "Your Answer: ";

@@ -5,7 +5,7 @@ Game::Game() {
 	choice = 0;
     playing = true;
 	activePlayer = 0;
-	fileName = "/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/text-based-game/text_based_game/text_based_game/characters.txt";
+	fileName = "/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/seven_seas_console_RPG/seven_seas_console_RPG/characters.txt";
 }
 
 Game::~Game() {
@@ -15,19 +15,19 @@ Game::~Game() {
 
 void Game::initGame() {
 	std::ifstream in;
-		in.open("/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/text-based-game/text_based_game/text_based_game/characters.txt");
+		in.open("/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/seven_seas_console_RPG/seven_seas_console_RPG/characters.txt");
 
 		Weapon::initNames();
 		Armour::initNames();
 
-//		if (in.is_open())
-//			this->loadPlayer();
-//		else
-//		{
+		if (in.is_open())
+			this->loadPlayer();
+		else
+		{
 			createNewCharacter();
-//			this->savePlayer();
-//		}
-	
+			this->savePlayer();
+		}
+
 	in.close();
 	
 	
@@ -83,6 +83,7 @@ void Game::mainMenu() {
 			{
 			case 0: //QUIT
 				playing = false;
+					std::cout << "Come back to continue your adventure!!!!" << "\n";
 				this->savePlayer();
 
 				break;
