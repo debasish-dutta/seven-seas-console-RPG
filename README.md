@@ -32,11 +32,12 @@ ___
 
 ## Game Screengrabs
 
-![Initialization](game_images/game init.png)
+<img src="assets/game_images/game%20init.png" alt="Initialization" width="900" height="350" />
 
-![Game start](game_images/Game start.png)
+<img src="assets/game_images/Game%20start.png" alt="Game start" width="750" height="400" />
 
-![Player char sheet](game_images/Player character sheet.png)
+<img src="assets/game_images/Player%20character%20sheet.png" alt="Player char sheet" width="750" height="400" />
+
 ___
 
 ## TODO for future expansion
