@@ -5,7 +5,7 @@ Game::Game() {
 	choice = 0;
     playing = true;
 	activePlayer = 0;
-	fileName = "/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/seven_seas_console_RPG/seven_seas_console_RPG/characters.txt";
+	fileName = "doc/characters.txt";
 }
 
 Game::~Game() {
@@ -15,7 +15,7 @@ Game::~Game() {
 
 void Game::initGame() {
 	std::ifstream in;
-		in.open("/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/seven_seas_console_RPG/seven_seas_console_RPG/characters.txt");
+		in.open("doc/characters.txt");
 
 		Weapon::initNames();
 		Armour::initNames();
@@ -50,7 +50,7 @@ void Game::mainMenu() {
 				this->players[activePlayer].getName() << " Total: " <<
 				this->activePlayer + 1 << "/" << this->players.size() <<
 				" =" << "\n" << "\n";
-
+				
 			std::cout << "0: Quit" << "\n";
 			std::cout << "1: Travel" << "\n";
 			std::cout << "2: Level up" << "\n";

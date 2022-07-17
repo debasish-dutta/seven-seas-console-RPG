@@ -3,9 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>BuildLocationStyle</key>
-	<string>UseAppPreferences</string>
+	<string>CustomLocation</string>
+	<key>CustomBuildIntermediatesPath</key>
+	<string>/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/seven_seas_console_RPG/build/Intermediates.noindex</string>
 	<key>CustomBuildLocationType</key>
-	<string>RelativeToDerivedData</string>
+	<string>Absolute</string>
+	<key>CustomBuildProductsPath</key>
+	<string>/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/seven_seas_console_RPG/build/Products</string>
 	<key>DerivedDataLocationStyle</key>
 	<string>Default</string>
 	<key>IssueFilterStyle</key>

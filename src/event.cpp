@@ -345,7 +345,7 @@ void Event::puzzleEncounter(Player &player) {
 	int gainExp = (chances * player.getLvl() * (rand()%10 + 1));
 	int gainCoins = (chances * player.getLvl() * (rand() % 10 + 1));
 	
-	Puzzle puzzle("/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/seven_seas_console_RPG/seven_seas_console_RPG/Puzzles/2.txt");
+	Puzzle puzzle("/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/seven_seas_console_RPG/doc/Puzzles/2.txt");
 	std::cout << "Oh warrior " << player.getName() << " !!\n";
 	std::cout << "Complete this puzzle if you wish to go forward! And beware....\n";
 	std::cout << "You have only ";

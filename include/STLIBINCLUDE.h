@@ -6,5 +6,6 @@
 #include<fstream>
 #include<iostream>
 #include<iomanip>
+#include <math.h>
 
 #include"dArr.h"

@@ -1,6 +1,4 @@
 #include "player.h"
-#include <math.h>
-
 
 Player::Player() {
 	this->xPos = 0;

@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E7862BB28803ECF00E79699 /* include in Sources */ = {isa = PBXBuildFile; fileRef = 4E7862B428802C2800E79699 /* include */; };
-		4E7862BC28803ECF00E79699 /* src in Sources */ = {isa = PBXBuildFile; fileRef = 4E7862B528802C2800E79699 /* src */; };
+		4E7862AD28802BBA00E79699 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E7862AC28802BBA00E79699 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4E7862A728802BBA00E79699 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1;
+			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -25,9 +24,7 @@
 
 /* Begin PBXFileReference section */
 		4E7862A928802BBA00E79699 /* seven_seas_console_rpg */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = seven_seas_console_rpg; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E7862B328802C2800E79699 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
-		4E7862B428802C2800E79699 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
-		4E7862B528802C2800E79699 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		4E7862AC28802BBA00E79699 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +41,7 @@
 		4E7862A028802BBA00E79699 = {
 			isa = PBXGroup;
 			children = (
-				4E7862B328802C2800E79699 /* doc */,
-				4E7862B428802C2800E79699 /* include */,
-				4E7862B528802C2800E79699 /* src */,
+				4E7862AB28802BBA00E79699 /* seven_seas_console_rpg */,
 				4E7862AA28802BBA00E79699 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +52,14 @@
 				4E7862A928802BBA00E79699 /* seven_seas_console_rpg */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4E7862AB28802BBA00E79699 /* seven_seas_console_rpg */ = {
+			isa = PBXGroup;
+			children = (
+				4E7862AC28802BBA00E79699 /* main.cpp */,
+			);
+			path = seven_seas_console_rpg;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,8 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E7862BB28803ECF00E79699 /* include in Sources */,
-				4E7862BC28803ECF00E79699 /* src in Sources */,
+				4E7862AD28802BBA00E79699 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +181,6 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SYMROOT = build;
 			};
 			name = Debug;
 		};
@@ -231,7 +232,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SYMROOT = build;
 			};
 			name = Release;
 		};
@@ -239,9 +239,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /usr/local/include;
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -250,9 +247,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /usr/local/include;
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
