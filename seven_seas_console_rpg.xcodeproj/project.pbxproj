@@ -6,11 +6,6 @@
 	objectVersion = 55;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		4E7862BB28803ECF00E79699 /* include in Sources */ = {isa = PBXBuildFile; fileRef = 4E7862B428802C2800E79699 /* include */; };
-		4E7862BC28803ECF00E79699 /* src in Sources */ = {isa = PBXBuildFile; fileRef = 4E7862B528802C2800E79699 /* src */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		4E7862A728802BBA00E79699 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,6 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E158A7928845EB600F3EA52 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 		4E7862A928802BBA00E79699 /* seven_seas_console_rpg */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = seven_seas_console_rpg; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7862B328802C2800E79699 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
 		4E7862B428802C2800E79699 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
@@ -44,6 +40,7 @@
 		4E7862A028802BBA00E79699 = {
 			isa = PBXGroup;
 			children = (
+				4E158A7928845EB600F3EA52 /* makefile */,
 				4E7862B328802C2800E79699 /* doc */,
 				4E7862B428802C2800E79699 /* include */,
 				4E7862B528802C2800E79699 /* src */,
@@ -66,7 +63,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E7862B028802BBA00E79699 /* Build configuration list for PBXNativeTarget "seven_seas_console_rpg" */;
 			buildPhases = (
-				4E7862A528802BBA00E79699 /* Sources */,
 				4E7862A628802BBA00E79699 /* Frameworks */,
 				4E7862A728802BBA00E79699 /* CopyFiles */,
 			);
@@ -110,18 +106,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		4E7862A528802BBA00E79699 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4E7862BB28803ECF00E79699 /* include in Sources */,
-				4E7862BC28803ECF00E79699 /* src in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		4E7862AE28802BBA00E79699 /* Debug */ = {

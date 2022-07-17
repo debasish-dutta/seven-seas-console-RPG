@@ -7,8 +7,8 @@ Player::Player() {
 	this->distancetravelled = 0;
 	
 	this->name = "";
-	this->Exp = 0;
 	this->Lvl = 0;
+	this->Exp = 0;
 	this->Hp = 0;
 	this->maxHp = 0;
 	this->Atk = 0;
@@ -18,21 +18,21 @@ Player::Player() {
 	this->Coins = 0;
 }
 
-Player::Player(std::string name, int distancetravelled, int Exp,
-			   int Lvl, int Hp, int maxHp, int Atk,
-			   int expReq, int Acc, int Armour, int Coins) {
+Player::Player(std::string name, int distancetravelled, int Lvl, 
+				int Exp, int Hp, int maxHp, int Atk, 
+				int Acc, int Armor, int Coins, int expReq) {
 	
 	this->distancetravelled = distancetravelled;
 	
 	this->name = name;
-	this->Exp = Exp;
 	this->Lvl = Lvl;
+	this->Exp = Exp;
 	this->Hp = Hp;
-	this->maxHp = 0;
-	this->Atk = 0;
-	this->expReq = 0;
-	this->Acc = 0;
-	this->Armor = 0;
+	this->maxHp = maxHp;
+	this->Atk = Atk;
+	this->expReq = expReq;
+	this->Acc = Acc;
+	this->Armor = Armor;
 	this->Coins = Coins;
 }
 
@@ -48,9 +48,9 @@ void Player::initialize(const std::string name) {
 	this->distancetravelled = 0;
 	
 	this->name = name;
-	this->Exp = 0;
 	this->Lvl = 1;
-	this->Hp = 5;
+	this->Exp = 0;
+	this->Hp = 10;
 	this->maxHp = pow(10, this->Lvl);
 	this->Atk = pow(2, this->Lvl);
 	this->expReq = static_cast<int>((50/3)*((pow(Lvl,3) - 6*pow(Lvl,2)) + (15*Lvl) - 10));
@@ -82,10 +82,12 @@ std::string Player::getAsString() const
 	+ std::to_string(Lvl) + " "
 	+ std::to_string(Exp) + " "
 	+ std::to_string(Hp) + " "
+	+ std::to_string(maxHp) + " "
 	+ std::to_string(Atk) + " "
 	+ std::to_string(Acc) + " "
 	+ std::to_string(Armor) + " "
-	+ std::to_string(Coins) + " ";
+	+ std::to_string(Coins) + " "
+	+ std::to_string(expReq) + " ";
 }
 
 std::string Player::getInvAsString(bool shop)
@@ -134,7 +136,7 @@ void Player::levelUp() {
 		this->Exp -= this->expReq;
 		this->Lvl++;
 		this->expReq = static_cast<int>((50/3)*((pow(Lvl,3) -
-							   6*pow(Lvl,2)) + (15*Lvl) - 10));
+						6*pow(Lvl,2)) + (15*Lvl) - 10));
 		this->updateStats();
 		std::cout << "YOU ARE NOW LEVEL " << this->Lvl << "!" << "\n\n";
 	}

@@ -1,0 +1,3 @@
+DD 13 4 32 40 40 8 6 20 160 484 
+0 Dragon-God's-Greatsword 3 2 65 32 7 15 
+

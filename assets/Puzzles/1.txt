@@ -1,0 +1,10 @@
+When the day after tomorrow becomes yesterday, then today will be as far from Sunday as the day it was today when the day before yesterday was tomorrow. Which day is it?
+7
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday
+6

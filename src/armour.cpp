@@ -4,7 +4,7 @@ dArr<std::string> Armour::names;
 
 void Armour::initNames()
 {
-	Armour::names.push("Robe-of-Fallen-Angel");
+	Armour::names.push("Robe-of-the-Fallen-Angel");
 	Armour::names.push("Dark-Fiend's-Leather-Jacket");
 	Armour::names.push("Leviethan's-Cloak");
 	Armour::names.push("Suit-of-Demon-Blood");

@@ -21,6 +21,7 @@ Puzzle::Puzzle(std::string fileName) {
 		
 		}
 	else
+		
 		throw ("Could not open Puzzle!!");
 	
 	inFile.close();

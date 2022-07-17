@@ -20,6 +20,9 @@ public:
 	void puzzleEncounter(Player &player);
 	
 	static int noOfEvents;
+
+	static dArr<std::string> puzzle_loc;
+	static void initLocns();
 	
 };
 

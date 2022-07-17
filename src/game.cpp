@@ -5,7 +5,7 @@ Game::Game() {
 	choice = 0;
     playing = true;
 	activePlayer = 0;
-	fileName = "doc/characters.txt";
+	fileName = "assets/characters.txt";
 }
 
 Game::~Game() {
@@ -15,10 +15,11 @@ Game::~Game() {
 
 void Game::initGame() {
 	std::ifstream in;
-		in.open("doc/characters.txt");
+		in.open("assets/characters.txt");
 
 		Weapon::initNames();
 		Armour::initNames();
+		Event::initLocns();
 
 		if (in.is_open())
 			this->loadPlayer();
@@ -213,8 +214,8 @@ void Game::loadPlayer() {
 	
 	std::string name = "";
 	int distancetravelled = 0;
-	int Exp = 0;
 	int Lvl = 0;
+	int Exp = 0;
 	int Hp = 0;
 	int maxHp = 0;
 	int Atk = 0;
@@ -242,18 +243,18 @@ void Game::loadPlayer() {
 			str.str(line);
 			str >> name;
 			str >> distancetravelled;
-			str >> Exp;
 			str >> Lvl;
+			str >> Exp;
 			str >> Hp;
 			str >> maxHp;
 			str >> Atk;
-			str >> expReq;
 			str >> Acc;
 			str >> Armor;
 			str >> Coins;
+			str >> expReq;
 			
 			//Create Player
-			Player tempP(name, distancetravelled, Exp, Lvl, Hp, maxHp, Atk, expReq, Acc, Armor, Coins);
+			Player tempP(name, distancetravelled, Lvl, Exp, Hp, maxHp, Atk, Acc, Armor, Coins, expReq);
 			//Weapon
 			str >> itemType >> name >> level >> rarity >> sellValue >> buyValue >> damageMin >> damageMax;
 			Weapon weapon(damageMin, damageMax, name, level, buyValue, sellValue, rarity);

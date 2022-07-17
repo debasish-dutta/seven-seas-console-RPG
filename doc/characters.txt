@@ -1,3 +1,0 @@
-DD 7 161 48503 4 0 0 0 0 
-0 Chaos-ShortBow 1 2 11 23 7 15 0 Chaos-ShortBow 2 2 22 44 7 15 0 Dragon-God's-Greatsword 83 0 83 41 68 137 
-1 Robe-of-Fallen-Angel 158 2 3320 1660 344 1 Leviethan's-Cloak 4 0 4 2 93 

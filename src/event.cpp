@@ -1,5 +1,17 @@
 #include "event.h"
 
+dArr<std::string> Event::puzzle_loc;
+
+void Event::initLocns()
+{
+	Event::puzzle_loc.push("assets/Puzzles/0.txt");
+	Event::puzzle_loc.push("assets/Puzzles/1.txt");
+	Event::puzzle_loc.push("assets/Puzzles/2.txt");
+	Event::puzzle_loc.push("assets/Puzzles/3.txt");
+	Event::puzzle_loc.push("assets/Puzzles/4.txt");
+	Event::puzzle_loc.push("assets/Puzzles/5.txt");
+}
+
 int Event::noOfEvents = 3;
 
 Event::Event() {
@@ -345,7 +357,8 @@ void Event::puzzleEncounter(Player &player) {
 	int gainExp = (chances * player.getLvl() * (rand()%10 + 1));
 	int gainCoins = (chances * player.getLvl() * (rand() % 10 + 1));
 	
-	Puzzle puzzle("/Users/debasishdutta/My Programming Stuffs/C_C++/cpp_projects/seven_seas_console_RPG/doc/Puzzles/2.txt");
+	// Puzzle puzzle("assets/Puzzles/0.txt");
+	Puzzle puzzle(Event::puzzle_loc[rand() % Event::puzzle_loc.size()]);
 	std::cout << "Oh warrior " << player.getName() << " !!\n";
 	std::cout << "Complete this puzzle if you wish to go forward! And beware....\n";
 	std::cout << "You have only ";
